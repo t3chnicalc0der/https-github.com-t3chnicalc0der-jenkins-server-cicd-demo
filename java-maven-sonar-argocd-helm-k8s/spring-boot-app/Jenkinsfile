@@ -47,7 +47,7 @@ pipeline {
     }
     stage('Update Deployment File') {
         environment {
-            GIT_REPO_NAME = " https-github.com-t3chnicalc0der-jenkins-server-cicd-demo
+            GIT_REPO_NAME = "https-github.com-t3chnicalc0der-jenkins-server-cicd-demo"
 "
             GIT_USER_NAME = "t3chnicalc0der"
         }
