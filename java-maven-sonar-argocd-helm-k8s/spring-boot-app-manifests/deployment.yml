@@ -13,9 +13,19 @@ spec:
     metadata:
       labels:
         app: spring-boot-app
-    spec:
+    resources:
+      requests:
+        memory: "64Mi"
+        cpu: "250m"
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
       containers:
       - name: spring-boot-app
-        image: abhishekf5/ultimate-cicd:replaceImageTag
+        image: zakeeakhtar12/ultimate-cicd:replaceImageTag
         ports:
         - containerPort: 8080
+
+
+
+
